@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="57c90df26abe4bcc9d44ab6ba8437a09" Name="Diagram1" ZoomLevel="101">
+        <EntityTypeShape EntityType="DevComDBModel.Audio" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.BoardComponent" Width="1.5" PointX="8.25" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.Canvas" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.Collaboration" Width="1.5" PointX="8.25" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.Color_Palletes" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.File" Width="1.5" PointX="3" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.Image" Width="1.5" PointX="3" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.NoteContent" Width="1.5" PointX="8.25" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.Notepad" Width="1.5" PointX="6" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.PersonalVault" Width="1.5" PointX="6" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.Reminder" Width="1.5" PointX="6" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.Tag" Width="1.5" PointX="0.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.Task" Width="1.5" PointX="6" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.Text" Width="1.5" PointX="3" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.UI_Designs" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.Update_Histories" Width="1.5" PointX="6" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.User" Width="1.5" PointX="3.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.Video" Width="1.5" PointX="3" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.Visual_Boards" Width="1.5" PointX="6" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DevComDBModel.Workflow_Designs" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="DevComDBModel.FK__Audios__Tag_Id__503BEA1C" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__BoardComp__Board__7EF6D905" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__Canvases__Tag_Id__55009F39" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__Collabora__Board__793DFFAF" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__Collaborati__Uid__7A3223E8" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__Files__Tag_Id__4B7734FF" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__Images__Tag_Id__59C55456" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__NoteConte__Notep__634EBE90" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__Notepads__Tag_Id__41EDCAC5" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__Notepads__Uid__40F9A68C" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__PersonalVau__Uid__2A164134" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__Reminders__Uid__3C34F16F" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__Texts__Tag_Id__46B27FE2" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__Videos__Tag_Id__5E8A0973" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__Visual_Bo__Tag_I__690797E6" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__Tasks__Uid__2EDAF651" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__Update_Hist__Uid__339FAB6E" ManuallyRouted="false" />
+        <AssociationConnector Association="DevComDBModel.FK__Visual_Boar__Uid__681373AD" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
