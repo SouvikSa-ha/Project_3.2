@@ -8,31 +8,59 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    <div class="container-fluid bg-dark vh-100">
+        <div class="row h-100">
+            <div class="col-md-2 bg-info pt-5 text-center position-relative">
+                <div class="row">
+                    <div class="col">
+                        <img src="..." class="rounded " alt="...">
+                    </div>
+                </div>
+                <div class="position-absolute start-50 top-50 translate-middle w-100">
+                    <ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
+                        <li class="nav-item border-top border-3 border-dark d-flex justify-content-center" role="presentation">
+                            <button class="nav-link active w-100" id="notepad-tab" data-bs-toggle="tab" data-bs-target="#notepad" type="button" role="tab" aria-controls="notepad" aria-selected="true">Notepad</button>
+                        </li>
+                        <li class="nav-item border-top border-bottom border-3 border-dark d-flex justify-content-center" role="presentation">
+                            <button class="nav-link w-100" id="task-tab" data-bs-toggle="tab" data-bs-target="#task" type="button" role="tab" aria-controls="task" aria-selected="false">Task</button>
+                        </li>
+                        <li class="nav-item border-bottom border-3 border-dark d-flex justify-content-center" role="presentation">
+                            <button class="nav-link w-100" id="reminder-tab" data-bs-toggle="tab" data-bs-target="#reminder" type="button" role="tab" aria-controls="reminder" aria-selected="false">Reminder</button>
+                        </li>
+                        <li class="nav-item border-bottom border-3 border-dark d-flex justify-content-center" role="presentation">
+                            <button class="nav-link w-100" id="visual-tab" data-bs-toggle="tab" data-bs-target="#visual" type="button" role="tab" aria-controls="visual" aria-selected="false">Visual</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="position-absolute bottom-0 start-50 translate-middle-x w-100">
+                    <div class="border-top border-3 border-dark">
+                        <a class="btn w-100 " href="">Storage</a>
+                    </div>
+                </div>
+
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
+            <div class="col text-light">
+                <div class="d-flex flex-column h-100">
+                    <div class="row p-5">
+
+                    </div>
+                    <div class="row flex-grow-1">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="container body-content">
+                                @RenderBody()
+                                <hr />
+                                <footer>
+                                    <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+                                </footer>
+                            </div>
+                            <div class="tab-pane fade" id="task" role="tabpanel" aria-labelledby="task-tab">...</div>
+                            <div class="tab-pane fade" id="reminder" role="tabpanel" aria-labelledby="reminder-tab">...</div>
+                            <div class="tab-pane fade" id="visual" role="tabpanel" aria-labelledby="visual-tab">...</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
