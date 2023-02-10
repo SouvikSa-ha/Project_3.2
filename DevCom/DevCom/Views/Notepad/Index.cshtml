@@ -11,10 +11,11 @@
             <div class="list-group">
                 @*@foreach (var item in Model)*@
 
-
+                @Html.ActionLink("something", "Notes", "Notepad")
                 <a href="#" class="list-group-item list-group-item-action notes" aria-current="true">
                     The current link item
                 </a>
+
                 <a href="#" class="list-group-item list-group-item-action notes">A second link item</a>
                 <a href="#" class="list-group-item list-group-item-action notes">A third link item</a>
                 <a href="#" class="list-group-item list-group-item-action notes">A fourth link item</a>
