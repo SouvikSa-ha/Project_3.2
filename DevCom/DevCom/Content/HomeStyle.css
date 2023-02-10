@@ -107,35 +107,6 @@
     .custom_sidebar.open li .tooltip {
         display: none;
     }
-    /*
-    .custom_sidebar input {
-        font-size: 15px;
-        color: whitesmoke;
-        font-weight: 400;
-        outline: none;
-        height: 35px;
-        width: 35px;
-        border: none;
-        border-radius: 5px;
-        background-color: #0067ac;
-        transition: all .5s ease;
-    }
-
-
-    .custom_sidebar.open input {
-        width: 100%;
-        padding: 0 20px 0 50px;
-    }
-
-    .custom_sidebar .bx-search {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        font-size: 22px;
-        background-color: #0067ac;
-        color: whitesmoke;
-    }*/
 
     .custom_sidebar li a {
         display: flex;
@@ -221,20 +192,6 @@
         border-radius: 50%;
         margin-right: 10px;
     }
-    /*
-    .custom_sidebar li.profile a::after {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transform: scaleX(0);
-        background-color: none;
-        border-radius: 5px;
-    }
-
-    .custom_sidebar li.profile a:hover::after {
-        transform: scaleX(0);
-        color: whitesmoke
-    }*/
 
 .home-section {
     position: relative;
