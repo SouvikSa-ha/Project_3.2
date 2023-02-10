@@ -4,8 +4,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+
+
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css-->
+
+
+    <link href="@Url.Content("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css")" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
 <body>
     <!--<div class="navbar navbar-inverse navbar-fixed-top">
@@ -27,17 +39,79 @@
             </div>
         </div>
     </div>-->
-    <div class="container-fluid">
-        @RenderBody()
-        <hr />
-
+    <div class="container-fluid" style="background-color: #e4e9f7">
+        <div class="custom_sidebar">
+            <div class="logo_details">
+                <i class="bx bxl-audible icon bx-sm"></i>
+                <div class="logo_name">DevCom</div>
+                <i class="bx bx-menu" id="custom_btn"></i>
+            </div>
+            <ul class="custom-nav-list list-unstyled">
+                <li class="profile mb-5">
+                    <a href="#">
+                        <img src="~/Assets/profile.jpeg" alt="profile image">
+                        <span class="link_name">Anna John</span>
+                    </a>
+                    <span class="tooltip">Anna John</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-notepad bx-sm'></i>
+                        <span class="link_name">Notepad</span>
+                    </a>
+                    <span class="tooltip">Notepad</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-task bx-sm'></i>
+                        <span class="link_name">Tasks</span>
+                    </a>
+                    <span class="tooltip">Tasks</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-calendar bx-sm'></i>
+                        <span class="link_name">Reminder</span>
+                    </a>
+                    <span class="tooltip">Reminder</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-table bx-sm'></i>
+                        <span class="link_name">Visual Board</span>
+                    </a>
+                    <span class="tooltip">Visual Board</span>
+                </li>
+                <li class="vault">
+                    <a  href="#">
+                        <i class='bx bx-hdd bx-sm' id="_vault"></i>
+                        <span class="link_name">Vault</span>
+                    </a>
+                    <span class="tooltip">Settings</span>
+                </li>
+            </ul>
+        </div>
+        <section class="home-section">
+            <div class="row justify-content-between">
+                <div class="col text">
+                    Home
+                </div>
+                <div class="col pt-4">
+                    <i class="bx bx-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+            @RenderBody()
+        </section>
     </div>
-    <footer>
-        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-    </footer>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    
 
+    @Scripts.Render("~/Scripts/Home.js")
+    @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
+
+    <script src="@Url.Content("https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js")" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="@Url.Content("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js")" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
 </body>
 </html>

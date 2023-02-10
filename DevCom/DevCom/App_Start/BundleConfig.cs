@@ -19,14 +19,16 @@ namespace DevCom
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new Bundle("~/bundles/bootstrap").Include(
+            /*bundles.Add(new Bundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.min.js",
                       "~/Scripts/bootstrap.bundle.min.js",
-                      "~/Scripts/bootstrap.esp.min.js"));
+                      "~/Scripts/bootstrap.esp.min.js"));*/
+          
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.min.css",
-                      "~/Content/Site.css"));
+                      //"~/Content/bootstrap.min.css",
+                      "~/Content/Site.css",
+                      "~/Content/HomeStyle.css"));
         }
     }
 }
