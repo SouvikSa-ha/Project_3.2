@@ -1,4 +1,5 @@
-﻿@model IEnumerable<DevCom.Models.Notepad>
+﻿@using DevCom.Models;
+@model DevCom.Models.NotepadViewModel
 
 @{
     ViewBag.Title = "Index";
@@ -8,12 +9,13 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-3 overflow-hidden">
-            <button type="button" class="btn btn-primary w-100 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-primary w-100 mb-3"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
                 + Create
             </button>
 
             <div class="list-group">
-                @foreach (var item in Model)
+                @foreach (var item in Model.Notepads)
                 {
                     <a class="list-group-item list-group-item-action notes"
                        data-toggle="collapse" href="#demo1" aria-expanded="false" aria-controls="demo1">
@@ -43,7 +45,8 @@
             <div class="modal-body">
                 <form>
                     <div class="mb-3">
-                        @Html.TextBoxFor(m => m.title, new { @class = "form-control" })
+                        @Html.TextBoxFor(m => m.Notepad.Title, new { @class = "form-control" })
+
                         <input type="text" class="form-control" id="recipient-name">
                     </div>
                 </form>
@@ -57,7 +60,13 @@
 </div>
 
   
-
+@section Scripts{
+    <script type="text/javascript">
+        function create() {
+            
+        }
+    </script>
+}
 
 @Scripts.Render("~/Scripts/notepadIndex.js")
 
