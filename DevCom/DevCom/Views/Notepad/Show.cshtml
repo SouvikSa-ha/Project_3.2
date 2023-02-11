@@ -1,81 +1,79 @@
-﻿@model DevCom.Models.Notepad
+﻿
+<p>hello world</p>
+@*
+    @model DevCom.Models.Notepad
 
-@{
-    ViewBag.Title = "Show";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
+    <div>
+        <p>@Model.Title</p>
+    </div>
 
-<div>
-    <p>@Model.Notepad_Id</p>
-    <p>@Model.Title</p>
-</div>
+    <!--
+    <h2>Show</h2>
 
-<!--
-<h2>Show</h2>
+    <div>
+        <h4>Notepad</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Id)
+            </dt>
 
-<div>
-    <h4>Notepad</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Id)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Id)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Id)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Title)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Title)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Icon)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Icon)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Icon)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Icon)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Creation_Date)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Creation_Date)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Creation_Date)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Creation_Date)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Update_Date)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Update_Date)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Update_Date)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Update_Date)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.Tag.Tag1)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Tag.Tag1)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.Tag.Tag1)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.Tag.Tag1)
-        </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.User.Username)
+            </dt>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.User.Username)
-        </dt>
+            <dd>
+                @Html.DisplayFor(model => model.User.Username)
+            </dd>
 
-        <dd>
-            @Html.DisplayFor(model => model.User.Username)
-        </dd>
-
-    </dl>
-</div>-->
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Notepad_Id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+        </dl>
+    </div>-->
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Notepad_Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+*@

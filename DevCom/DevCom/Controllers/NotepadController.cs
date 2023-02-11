@@ -17,10 +17,10 @@ namespace DevCom.Controllers
             return View(data);
         }
 
-        public ActionResult Show(string noteid)
+        public ActionResult Show(/*string noteid*/)
         {
-            var item = db.Notepads.Where(m => m.Notepad_Id == noteid);
-            return View(item);
+            //var item = db.Notepads.Where(m => m.Notepad_Id == noteid).FirstOrDefault();
+            return PartialView();
         }
     }
 }
